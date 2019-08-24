@@ -10,6 +10,7 @@ def load_library(file_path)
     end
 
   emoticon_library["get_emoticon"] = original_library.reduce({}) do |memo, (key, value)|
+    memo[value[0]] = value[1]
     
   end
   
